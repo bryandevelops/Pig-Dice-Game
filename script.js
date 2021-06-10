@@ -84,6 +84,8 @@ function resetGame() {
   player2.classList.remove("player--active", "player--winner");
   player1.classList.add("player--active");
   activePlayer = "player1";
+  dice.classList.remove("hidden");
+  dice.setAttribute("src", "assets/dice-1.png");
   rollDiceButton.addEventListener("click", rollDice);
   holdScoreButton.addEventListener("click", holdScore);
 }
